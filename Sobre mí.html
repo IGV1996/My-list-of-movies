@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <h1>Sobre mí:</h1>
-    <h2>Hola a todos!, este soy yo:</h2>
-    <video src="Video/stock-footage-professional-woman-hacker-codes-program-to-improve-security-of-hidden-corporation-dangerous-work.webm" controls width="400"></video>
-    <p>Me presento, me llamo <strong>Ismael</strong>, soy un chico de Madrid de 28 años de edad 
+    <h1 class="sobre-mi">Sobre mí:</h1>
+    <h2 class="presentacion">Hola a todos!, este soy yo:</h2>
+    <video autoplay loop muted class="video1"> <!-- con el "autoplay loop muted" esto el video se reproduce en bucle y sin sonido -->
+    <source src="Video/stock-footage-professional-woman-hacker-codes-program-to-improve-security-of-hidden-corporation-dangerous-work.webm" type="video/mp4">
+    Tu navegador no soporta el elemento video. 
+    </video>
+    <p class="bordes">Me presento, me llamo <strong>Ismael</strong>, soy un chico de Madrid de 28 años de edad 
         <br> que actualmente está aprendiendo a programar y este es un pequeño 
         <br> proyecto que estoy haciendo con HTML para empezar a soltarme. 
         <br> Espero que les guste.</p>
 
-    <video src="Video/stock-footage-hacker-code-running-down-a-computer-screen-terminal.webm" controls width="400"></video>
-
-    <h2>Puntua mi trabajo!</h2>
-    <p>Por favor, puntua mi trabajo de este post sobre películas usando HTML</p>    
-
-    <form action="Registro de satisfacción del trabajo" method="post">
-    <label for="Puntuación">Puntuación</labe>
-    <input type="number" id="puntuación" name="puntuación" min="1" max="10" required> <br><br>
- 
-
-    <label for="comentario">Agrega un comentario:</label><br>
-    <textarea id="comentario" name="comentario" rows="5" cols="50" maxlength="300" placeholder="Escribe tu comentario aquí..."></textarea></form>  <br><br>
-
-
-    <button type="submit">Enviar</button>
-
+        
+    <h2>Puntúa mi trabajo!</h2>
+      <p>Por favor, puntúa mi trabajo de este post sobre películas usando HTML</p>    
+          
+        <form action="Registro de satisfacción del trabajo" method="post">
+            <label for="puntuacion">Puntuación</label>
+            <input type="number" id="puntuacion" name="puntuacion" min="1" max="10" required> <br><br>
+          
+            <label for="comentario" class="comentario">Agrega un comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="5" cols="50" maxlength="300" placeholder="Escribe tu comentario aquí..." class="texto"></textarea> <br><br>
+          
+            <button type="submit" class="boton">Enviar</button>
+        </form>
+          
+          
 
 </body>
-</html>
+</html

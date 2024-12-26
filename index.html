@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My list of movies</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <h1>Mi lista de películas</h1>
+    <h1 class="lista">Mi lista de películas</h1>
 
-    <ul>
-        <li><a href="Géneros/Acción.html">Películas de acción</a></li>
-        <li><a href="Géneros/Ciencia ficción.html">Películas de ciencia ficción</a></li>
-        <li><a href="Géneros/Drama.html">Películas de drama</a></li>
-    </ul>
+    <div class="generos">
+          <h2 class="acción"><a href="Géneros/Acción.html">Películas de acción</a></h2>
+          <h2 class="ficción"><a href="Géneros/Ciencia ficción.html">Películas de ciencia ficción</a></h2>
+          <h2 class="drama"><a href="Géneros/Drama.html">Películas de drama</a></h2>
+    </div>
+
+    <div>
+        <video autoplay loop muted class="videoclub">
+            <source src="Video/6380809_clapperboard_by_voxmood_preview.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento video. 
+        </video>
+        
+    </div>
 
     <footer>
-        <a href="Sobre mí.html">Sobre mí</a>
+        <a href="Sobre mí.html" class="here">Sobre mí</a>
     </footer>
+
+    <h6 class="here">&copy; Copyright. All Rights Reserved.</h6>
 
     
 </body>
